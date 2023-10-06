@@ -261,7 +261,7 @@
 
   .navbar-toggler .navbar-toggler-icon {
     background: var(--white-color);
-    transition: background 10ms 300ms ease;
+    transition:  10ms 300ms ease;
     display: block;
     width: 30px;
     height: 2px;
@@ -514,6 +514,7 @@
   content: "";
   display: table;
   clear: both
+  
 }
 
 .col,.half,.third,.twothird,.threequarter,.quarter {
@@ -576,107 +577,14 @@
 }
 
   /*---------------------------------------
-     CONTACT               
-  -----------------------------------------*/
-  
-  .contact-form .form-control {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(142, 140, 140, 0.35);
-    box-shadow: none;
-    border-radius: 0;
-    outline: none;
-    color: var(--dark-color);
-    font-weight: var(--font-weight-light);
-    padding-left: 0;
-    cursor: text;
-  }
-
-  .contact-form input {
-    height: calc(2.25rem + 10px);
-  }
-
-  .contact-form .form-group {
-    margin: 0 0 1rem;
-    position: relative;
-  }
-
-  .contact-form .form-control,
-  .webform-label {
-    transition: all 0.4s;
-    touch-action: manipulation;
-  }
-
-  .webform-label {
-    cursor: text;
-    font-size: 15px;
-    font-weight: var(--font-weight-light);
-    margin-bottom: 5px;
-  }
-
-  .contact-form .form-control:placeholder-shown + .webform-label {
-    cursor: text;
-    max-width: 66.66%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transform-origin: left bottom;
-    transform: translate(0, 2.125rem) scale(1.5);
-  }
-
-  .contact-form ::-webkit-input-placeholder {
-    opacity: 0;
-    transition: inherit;
-    color: var(--dark-color);
-  }
-
-  .contact-form ::-moz-placeholder {
-    opacity: 0;
-    transition: inherit;
-    color: var(--dark-color);
-  }
-
-  .contact-form .form-control:focus::-webkit-input-placeholder {
-    opacity: 1;
-  }
-
-  .contact-form .form-control:focus::-moz-placeholder {
-    opacity: 1;
-  }
-
-  .contact-form .form-control:not(:placeholder-shown) + .webform-label,
-  .contact-form .form-control:focus + .webform-label {
-    transform: translate(0, 0) scale(1);
-    cursor: pointer;
-    color: var(--gray-color);
-  }
-
-  .contact-form #submit-button {
-    background: var(--primary-color);
-    border: none;
-    border-radius: var(--border-radius-medium);
-    color: var(--dark-color);
-    cursor: pointer;
-    font-size: var(--p-font-size);
-    line-height: 0;
-    margin-top: 2.5rem;
-    padding: 1.5rem 1.8rem 1.8rem 1.8rem;
-    white-space: nowrap;
-    max-width: 190px;
-  }
-
-  .copyright-text {
-    font-size: var(--base-font-size);
-  }
-
-
-  /*---------------------------------------
      SOCIAL LINKS              
   -----------------------------------------*/
 
   .social-links {
-    margin: 40px 0;
+    margin: 70px 0;
+    margin-top: 100px;
     padding: 0;
+    text-align: center;
   }
 
   .social-links li {
@@ -684,11 +592,31 @@
     list-style: none;
   }
 
+  #contact{
+    margin-top: 10px;
+    border-top: solid 2px black;
+  }
+
+  #sos{
+    margin-top: 100px;
+  }
+
+  #so{
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #soc{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+  }
+
   .social-links a {
     display: inline-block;
     color: var(--p-color);
     font-size: var(--h6-font-size);
-    margin: 5px 20px 5px 0;
+    margin: 5px 10px 5px 0;
   }
 
   .social-links a:hover {
