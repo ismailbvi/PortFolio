@@ -5,22 +5,29 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" 
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- Favicon -->
-    <link rel="icon"
-    type="image/x-icon"
-    href="https://seeklogo.com/images/C/clockify-logo-32749CCA76-seeklogo.com.png"/>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/7610/7610710.png"
+    />
     <!-- FontAwesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -29,175 +36,267 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="#intro" class="nav-link smoothScroll">Introduction</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link smoothScroll">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#testimonials" class="nav-link smoothScroll">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link smoothScroll">Contact</a>
-          </li>
-        </ul>
+        <a class="navbar-brand" href="navbar-toggler">Portfolio</a>
+        <button class="navbar-toggler" type="button" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#service" class="nav-link smoothScroll">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#skill" class="nav-link smoothScroll">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                </li>
+          </ul>
           <button class="download-btn" role="button">Download</button>
         </div>
       </div>
-    </div>
-  </nav>
-<!-- INTRO -->
- <section class="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5">
-        <img src="images/pix1.jpg" class="about-image img-fluid"/>
-      </div>
-      <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-        <div class="hero-text">
-          <h2>Hello, My Name is</h2>
-          <h2 class="font-weight-bold">Ismail Bimbashov</h2>
-        </div>
-        <div class="wrapper">
-          <div class="static-txt">I'm a</div>
-          <ul class="dynamic-txts">
-            <li id="dev"><span>Developer</span></li>
-            <li id="enge"><span>Engineer</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- About Section -->
- <section class="about-section-padding">
-  <div class="container">
-    <h3>About Me</h3>
-    <p> I graduated from the <a href="https://uni-plovdiv.bg/">University of Plovdiv, Paisii Hilendarski Plovdiv</a> majoring in telecommunications and information systems, and before that, I graduated from the <a href="https://pgeebansko.org/">High School of Electronics and Energy</a> in Bansko, majoring in computer networks. My hobbies are gaming, football, skiing,chess and creating different programs. The strong points I have are eating,sleeping and drinking coffee.</p>
-    <ul class="profile-list list-unstyled">
-      <li>
-        <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
-        <a href="mailto:ismailbv00@gmail.com">ismailbv00@gmail.com</a>
-      </li>
-        <li>
-          <strong><i class="fa-solid fa-location-dot"></i> Location:</strong>
-          <a href="#">Plovdiv, Bulgaria</a>
-        </li>
-          <li>
-            <strong><i class="fa-solid fa-phone"></i> Phone:</strong>0898604242
-          </li>
-    </ul>
-  </div>
-</section>
-<!-- Service -->
- <section class="service">
-  <div class="container">
-    <h3>Service</h3>
-    <div class="row about-third">
-      <div class="col-md-4 service-now">
-        <div class="service-box">
-          <i class="fa fa-code"></i>
-          <h3>Web Development</h3>
-          <p>I can build interactive and responsive web applications and maintain the create from me or someone else's website.</p>
-        </div>
-      </div>
-      <div class="col-md-4 service-now">
-        <div class="service-box">
-          <i class ="fa fa-laptop"></i>
-          <h3>Mobile Apps</h3>
-          <p>I can develop native and cross-platform mobile apps.</p>
-        </div>
-      </div>
-      <div class="col-md-4 service-now">
-        <div class="service-box">
-          <i class="fa fa-mobile"></i>
-          <h3>Device as a Service</h3>
-          <p>I can build and offer of management services and IT equipment — like PCs, smartphones and mobile devices.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Skills Section -->
- <section class="skill">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="padding-16">My Skills</h3>
-        <p class="wide" id="c"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></p>
-        <div class="light-grey">
-          <div class="container center padding-small dark-grey" style="width:87%">87%</div>
-        </div>
-        <p class="wide" id="c"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png"></p>
-        <div class="light-grey">
-          <div class="container center padding-small dark-grey" style="width:98%">98%</div>
-        </div>
-        <p class="wide" id="c"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"></p>
-        <div class="light-grey">
-          <div class="container center padding-small dark-grey" style="width:95%">95%</div>
-        </div>
-        <p class="wide" id="c"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/C%2B%2B_logo.png"></p>
-        <div class="light-grey">
-          <div class="container center padding-small dark-grey" style="width:66%">66%</div>
-        </div>
-        <p class="wide" id="cb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/2560px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png"></p>
-        <div class="light-grey">
-          <div class="container center padding-small dark-grey" style="width:96%">96%</div>
-        </div>
-        <br>
-        <div class="row center dark-grey padding-16 section">
-          <div class="quarter section">
-            <span class="xlarge">1</span><br>Partners
+    </nav>
+    <!-- Intro -->
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="images/pix1.jpg" class="about-image img-fluid" />
           </div>
-            <div class="quarter section">
-              <span class="xlarge">10+</span><br>Projects Done
+          <div
+            class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12"
+          >
+            <div class="hero-text">
+              <h2>Hello, My Name is</h2>
+              <h2 class="font-weight-bold">Ismail Bimbashov</h2>
             </div>
-              <div class="quarter section">
-                <span class="xlarge">69+</span><br>Happy Clients
+            <div class="wrapper">
+              <div class="static-txt">I'm a</div>
+              <ul class="dynamic-txts">
+                <li id="dev"><span>Developer</span></li>
+                <li id="enge"><span>Engineer</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about-section-padding">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>
+          I graduated from the
+          <a href="https://uni-plovdiv.bg/"
+            >University of Plovdiv, Paisii Hilendarski Plovdiv</a
+          >
+          majoring in telecommunications and information systems, and before
+          that, I graduated from the
+          <a href="https://pgeebansko.org/"
+            >High School of Electronics and Energy</a
+          >
+          in Bansko, majoring in computer networks. My hobbies are gaming,
+          football, skiing,chess and creating different programs. The strong
+          points I have are eating,sleeping and drinking coffee.
+        </p>
+        <ul class="profile-list list-unstyled">
+          <li>
+            <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
+            <a href="mailto:ismailbv00@gmail.com" target="_blank"
+              >ismailbv00@gmail.com</a
+            >
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-location-dot"></i> Location:</strong>
+            <a href="https://maps.app.goo.gl/KGpbyKVR6FSefXC19" target="_blank"
+              >Plovdiv, Bulgaria</a
+            >
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-phone" id="service"></i> Phone:</strong >0898604242
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Service -->
+    <section class="service">
+      <div class="container">
+        <h3>Service</h3>
+        <div class="row about-third">
+          <div class="col-md-4 service-now">
+            <div class="service-box">
+              <i class="fa fa-code" style="color: aqua"></i>
+              <h3>Web Development</h3>
+              <p>
+                I can build interactive and responsive web applications and
+                maintain the create from me or someone else's website.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 service-now">
+            <div class="service-box">
+              <i class="fa fa-laptop" style="color: mintcream"></i>
+              <h3>Mobile Apps</h3>
+              <p>I can develop native and cross-platform mobile apps.</p>
+            </div>
+          </div>
+          <div class="col-md-4 service-now">
+            <div class="service-box">
+              <i class="fa fa-mobile" style="color: #3ddc84"></i>
+              <h3>Device as a Service</h3>
+              <p id="skill">
+                I can build and offer of management services and IT equipment —
+                like PCs, smartphones and mobile devices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skill">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="padding-16">My Skills</h3>
+            <p class="wide" id="c">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              />
+            </p>
+            <div class="light-grey">
+              <div
+                class="container center padding-small dark-grey"
+                style="width: 87%"
+              >
+                87%
               </div>
-                <div class="quarter section"><span class="xlarge">2</span><br>
+            </div>
+            <p class="wide" id="c">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png"
+              />
+            </p>
+            <div class="light-grey">
+              <div
+                class="container center padding-small dark-grey"
+                style="width: 98%"
+              >
+                98%
+              </div>
+            </div>
+            <p class="wide" id="c">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+              />
+            </p>
+            <div class="light-grey">
+              <div
+                class="container center padding-small dark-grey"
+                style="width: 95%"
+              >
+                95%
+              </div>
+            </div>
+            <p class="wide" id="c">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/32/C%2B%2B_logo.png"
+              />
+            </p>
+            <div class="light-grey">
+              <div
+                class="container center padding-small dark-grey"
+                style="width: 66%"
+              >
+                66%
+              </div>
+            </div>
+            <p class="wide" id="cb">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/2560px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png"
+              />
+            </p>
+            <div class="light-grey">
+              <div
+                class="container center padding-small dark-grey"
+                style="width: 96%"
+              >
+                96%
+              </div>
+            </div>
+            <br />
+            <div class="row center dark-grey padding-16 section">
+              <div class="quarter section">
+                <span class="xlarge">1</span><br />Partners
+              </div>
+              <div class="quarter section">
+                <span class="xlarge">10+</span><br />Projects Done
+              </div>
+              <div class="quarter section">
+                <span class="xlarge">69+</span><br />Happy Clients
+              </div>
+              <div class="quarter section">
+                <span class="xlarge">2</span><br />
                 Courses
               </div>
             </div>
           </div>
-    </div>
-  </div>
-</section>
-<!-- Contact Section -->
- <footer class="contact section-padding">
-  <div class="container text-center">
-    <h3>Socials</h3>
-    <ul class="social-links">
-      <li><a href="https://www.facebook.com/ismail.bimbashov/" class="fab fa-facebook"></a>
-      </li>
-      <li><a href="https://discord.gg/vrwrqZD8" class="fab fa-discord"></a>
-      </li>
-      <li><a href="https://www.linkedin.com/in/ismail-bimbashov-b242b3287" class="fab fa-linkedin"></a>
-      </li>
-    </ul>
-    <p><i class="fa-solid fa-phone" id="phonCon"></i> 0898604242<p>
-      <a href="mailto:ismailbv00@gmail.com" id="phonCon"><i class="fa-solid fa-envelope"></i> ismailbv00@gmail.com</a>
-    </p>
-  </div>
-</footer>
-<!-- Scripts -->
- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
- <script src="js/script.js"></script>
-</body>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <footer class="contact section-padding" id="contact">
+      <div class="container text-center">
+        <h3>Socials</h3>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.facebook.com/ismail.bimbashov/"
+              target="_blank"
+              class="fab fa-facebook"
+            ></a>
+          </li>
+          <li>
+            <a href="https://discord.gg/S8RPWkA3" class="fab fa-discord"></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ismail-bimbashov-b242b3287"
+              target="_blank"
+              class="fab fa-linkedin"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ismailbvi"
+              target="_blank"
+              class="fa-brands fa-github"
+            ></a>
+          </li>
+        </ul>
+        <div class="phonAndCon">
+          <p><i class="fa-solid fa-phone"></i> 0898604242</p>
+          <a href="mailto:ismailbv00@gmail.com" target="_blank" class="gmail">
+            <i class="fa-solid fa-envelope"></i> ismailbv00@gmail.com
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
