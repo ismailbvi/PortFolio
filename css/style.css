@@ -336,7 +336,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 60%;
-  margin-top: 15px;
+  margin-top: 16.5px;
   left: 0;
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -383,6 +383,7 @@ a:hover {
   border: 1px solid #ddd;
   background-image: linear-gradient(45deg, rgb(37, 143, 230), #ce1709);
   background-size: 300% 300%;
+  border-radius: 30px;
   animation: gradientAnimation 12s ease infinite;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
@@ -401,7 +402,6 @@ a:hover {
 }
 /* Skill */
 .skill {
-  background: #f9f9f9;
   padding: 0;
   width: 100%;
 }
@@ -432,9 +432,8 @@ a:hover {
   width: 600px;
   text-align: center;
   padding-right: 1px;
-  margin-top: 16.5px;
+  margin-top: 15px;
   opacity: 100;
-  transform: translateX(0px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   width: 100%;
   background-image: linear-gradient(45deg, rgb(0, 0, 0), #e2e2e2);
@@ -451,7 +450,6 @@ a:hover {
   margin-top: 15px;
   color: var(--white-color);
   opacity: 100;
-  transform: translateX(0px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   width: 100%;
   background-image: linear-gradient(45deg, rgb(37, 143, 230), #ce1709);
